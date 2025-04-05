@@ -119,3 +119,8 @@ docker-compose up -d
 # Stop the application
 docker-compose down
 ```
+
+## how to run unit test
+```
+npm run test
+```
