@@ -48,8 +48,17 @@ The backend is built with Golang and provides a RESTful API for searching ticket
 ### Running the Backend
 
 1. Navigate to the `apps/backend` directory.
-2. Install dependencies: `go mod download`
-3. Start the server: `air`
+2. Install dependencies:
+
+```
+go mod download
+```
+
+3. Start the server:
+
+```
+air
+```
 
 ## Docker Setup
 
