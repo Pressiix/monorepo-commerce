@@ -28,7 +28,7 @@ The frontend is built with Next.js and provides a user interface for interacting
 - Search Tickets
 - Sorting ticket list
 - Apply coupon code
-- Redux Persist to store data in a local storage
+- Use Redux Persist to store data in a local storage
 - Unit test for calculation logic, Cart component and UI snapshot using Jest
 - Can build Docker Image
 
