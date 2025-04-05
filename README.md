@@ -16,7 +16,7 @@ monorepo-commerce
 └── README.md
 ```
 
-## Frontend
+## Frontend (Next.js)
 
 The frontend is built with Next.js and provides a user interface for interacting with the ticket list page.
 
@@ -32,7 +32,7 @@ The frontend is built with Next.js and provides a user interface for interacting
 - Unit test for calculation logic, Cart component and UI snapshot using Jest
 - Can build Docker Image
 
-## Backend
+## Backend (Go)
 
 The backend is built with Golang and provides a RESTful API for searching tickets and discount for any coupon code.
 
@@ -103,6 +103,7 @@ npm run dev
 - Backend: http://localhost:8080
 
 ## how to run unit test
+
 ```
 npm run test
 ```
