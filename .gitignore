@@ -43,3 +43,4 @@ yarn-error.log*
 /apps/**/build
 /apps/**/.next
 /apps/**/.turbo
+/apps/backend/tmp/main
