@@ -44,10 +44,6 @@ The backend is built with Golang and provides a RESTful API for searching ticket
 - Get discount info by coupon code from API (read data from json files)
 - Can build Docker Image
 
-## Docker Setup
-
-This project includes Docker support for both the frontend and backend applications
-
 # Prerequisite for local development
 
 1. You need to install Node.js and Golang first
