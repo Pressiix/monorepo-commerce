@@ -20,56 +20,59 @@ blog-monorepo
 
 ## Frontend
 
-The frontend is built with Next.js and provides a user interface for interacting with the blog posts.
+The frontend is built with Next.js and provides a user interface for interacting with the ticket list page.
 
 ### Key Features
 
-- Create new blog posts
-- View a list of blog posts
+- Show ticket list
+- Add / Remove tickets to cart
 - Responsive design
-
-### Running the Frontend
-
-1. Navigate to the `apps/frontend` directory.
-2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
+- Search Tickets
+- Sorting ticket list
+- Apply coupon code
+- Redux Persist to store data in a local storage
+- Can build Docker Image
 
 ## Backend
 
-The backend is built with Nest.js and provides a RESTful API for managing blog posts and user authentication.
+The backend is built with Golang and provides a RESTful API for searching tickets and discount for any coupon code.
 
 ### Key Features
 
-- CRUD operations for blog posts
-- User authentication with mock credentials
+- Implement [Air](https://github.com/air-verse/air) - Live reload for Go apps
+- Get Ticket list
+- Search Ticket List
+- Get discount info from coupon code
+- Can build Docker Image
 
 ### Running the Backend
 
 1. Navigate to the `apps/backend` directory.
-2. Install dependencies: `npm install`
-3. Start the server: `npm run start`
+2. Install dependencies: `go mod download`
+3. Start the server: `air`
 
 ## Docker Setup
 
-This project includes Docker support for both the frontend and backend applications, as well as a PostgreSQL database.
+This project includes Docker support for both the frontend and backend applications
 
 ### Running with Docker
 
 1. Ensure Docker is installed and running.
-2. Run the following command to start all services:
+2. Run the following command to start all services from the root folder:
+
    ```
-   docker-compose up
+   docker-compose -f docker-compose.yml up --build
+   ```
+
+   or
+
+   ```
+   npm run docker-dev
    ```
 
 ## Docker Support
 
 This project includes Docker support for easy development and deployment.
-
-### Docker Commands
-
-- Build the image: `docker build -t community-board-web .`
-- Run the container: `docker run -p 3000:3000 community-board-web`
-- Run with environment variables: `docker run -p 3000:3000 -e ENV_NAME=value community-board-web`
 
 ### Docker Compose
 
@@ -86,11 +89,33 @@ docker-compose up -d
 docker-compose down
 ```
 
-## Make Commands
+# Prerequisite for local development
 
-The project includes a Makefile for common development tasks:
+1. You need to install node.js and golang first
+2. Ensure the cli is available by running this command
 
-```bash
-# Build the application
-make build
+```
+# check node available
+node --version
+
+# check golang available
+go
+```
+
+3. You need to install [Air](https://github.com/air-verse/air) - Live reload for Go apps
+
+```
+curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
+```
+
+4. Ensure the air cli is available
+
+```
+air --help
+```
+
+5. Install Turbo CLI
+
+```
+npm install turbo --global
 ```
