@@ -1,13 +1,11 @@
-# README.md for Blog Monorepo
+# README.md for Monorepo
 
-# Blog Monorepo
-
-This project is a monorepo setup using Turbo Repo that contains both a frontend and a backend application for an online blog posting platform. Users can create, view, and manage blog posts, as well as log in with mock credentials.
+This project is a monorepo setup using Turbo Repo that contains both a frontend and a backend application for an online e-commerce platform. Users can view available tickets in store and can add/remove from the cart
 
 ## Project Structure
 
 ```
-blog-monorepo
+monorepo-commerce
 ├── apps
 │   ├── frontend
 │   └── backend
