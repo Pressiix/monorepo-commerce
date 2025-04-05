@@ -5,7 +5,7 @@
     "apps/*"
   ],
   "scripts": {
-    "predev": "cd apps/backend && go mod download && cd ../../ && cd apps/frontend && npm install",
+    "predev": "cd apps/backend && go mod download && cd ../../ && cd apps/frontend && npm install && cd ../../",
     "dev": "turbo run dev --parallel",
     "docker-dev": "docker-compose -f docker-compose.yml up --build",
     "test": "jest",
