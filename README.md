@@ -25,7 +25,6 @@ The frontend is built with Next.js and provides a user interface for interacting
 - Responsive and support mobile size
 - Show ticket list
 - Add / Remove tickets to cart
-- Responsive design
 - Search Tickets
 - Sorting ticket list
 - Apply coupon code
