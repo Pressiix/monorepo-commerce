@@ -102,24 +102,9 @@ npm install turbo --global
 npm run dev
 ```
 
-## Docker Support
-
-This project includes Docker support for easy development and deployment.
-
-### Docker Compose
-
-Use Docker Compose for a more streamlined development experience:
-
-```bash
-# Start the application
-docker-compose up
-
-# Run in detached mode
-docker-compose up -d
-
-# Stop the application
-docker-compose down
-```
+## Access Apps
+- Frontend: http://localhost:3000
+- Backend: http://localhost:8080
 
 ## how to run unit test
 ```
