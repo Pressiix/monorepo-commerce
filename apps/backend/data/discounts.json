@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "code": "SUMMER10",
+    "description": "10% off summer tickets",
+    "discountPercentage": 10
+  },
+  {
+    "id": 2,
+    "code": "WINTER15",
+    "description": "15% off winter tickets",
+    "discountPercentage": 15
+  },
+  {
+    "id": 3,
+    "code": "SPRING20",
+    "description": "20% off spring tickets",
+    "discountPercentage": 20
+  }
+]

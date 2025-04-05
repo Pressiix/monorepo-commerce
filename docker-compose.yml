@@ -1,0 +1,40 @@
+services:
+  nextjs-dev:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./apps/frontend:/app
+      - /app/node_modules
+    working_dir: /app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+      - NODE_ENV=development
+      - NEXT_PUBLIC_BACKEND_API_URL=http://localhost:8080
+    depends_on:
+      - golang
+    networks:
+      - app-network
+
+  golang:
+    container_name: golang
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./apps/backend:/app
+    environment:
+      - PORT=8080
+      - ENVIRONMENT=development
+    command: ["air"]
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
