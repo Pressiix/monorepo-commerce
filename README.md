@@ -43,58 +43,9 @@ The backend is built with Golang and provides a RESTful API for searching ticket
 - Get discount info from coupon code
 - Can build Docker Image
 
-### Running the Backend
-
-1. Navigate to the `apps/backend` directory.
-2. Install dependencies:
-
-```
-go mod download
-```
-
-3. Start the server:
-
-```
-air
-```
-
 ## Docker Setup
 
 This project includes Docker support for both the frontend and backend applications
-
-### Running with Docker
-
-1. Ensure Docker is installed and running.
-2. Run the following command to start all services from the root folder:
-
-   ```
-   docker-compose -f docker-compose.yml up --build
-   ```
-
-   or
-
-   ```
-   npm run docker-dev
-   ```
-
-## Docker Support
-
-This project includes Docker support for easy development and deployment.
-
-### Docker Compose
-
-Use Docker Compose for a more streamlined development experience:
-
-```bash
-# Start the application
-docker-compose up
-
-# Run in detached mode
-docker-compose up -d
-
-# Stop the application
-docker-compose down
-```
 
 # Prerequisite for local development
 
@@ -125,4 +76,46 @@ air --help
 
 ```
 npm install turbo --global
+```
+
+## How to run this project (Local Development)
+
+### Method 1 : Running with Docker (Recommend)
+
+1. Ensure Docker is installed and running.
+2. Run the following command to start all services from the root folder:
+
+   ```
+   docker-compose -f docker-compose.yml up --build
+   ```
+
+   or
+
+   ```
+   npm run docker-dev
+   ```
+
+### Method 2 : Running with NPM
+
+```
+nom run dev
+```
+
+## Docker Support
+
+This project includes Docker support for easy development and deployment.
+
+### Docker Compose
+
+Use Docker Compose for a more streamlined development experience:
+
+```bash
+# Start the application
+docker-compose up
+
+# Run in detached mode
+docker-compose up -d
+
+# Stop the application
+docker-compose down
 ```
