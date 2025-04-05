@@ -38,9 +38,9 @@ The backend is built with Golang and provides a RESTful API for searching ticket
 ### Key Features
 
 - Implement [Air](https://github.com/air-verse/air) - Live reload for Go apps
-- Get Ticket list
-- Search Ticket List
-- Get discount info from coupon code
+- Get Ticket list from API
+- Search Ticket List from API
+- Get discount info by coupon code from API
 - Can build Docker Image
 
 ## Docker Setup
