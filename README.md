@@ -99,7 +99,7 @@ npm install turbo --global
 ### Method 2 : Running with NPM
 
 ```
-nom run dev
+npm run dev
 ```
 
 ## Docker Support
