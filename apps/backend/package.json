@@ -1,6 +1,6 @@
 {
-    "name": "backend",
-    "scripts": {
-      "dev": "./serve.sh"
-    }
+  "name": "backend",
+  "scripts": {
+    "dev": "air"
   }
+}

@@ -3,7 +3,6 @@ package main
 import (
 	"log"
 	"strings"
-	"fmt"
 
 	"go-api/middlewares"
 	"go-api/services"

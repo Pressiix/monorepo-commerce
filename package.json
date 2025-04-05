@@ -5,11 +5,11 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "docker:dev": "docker compose -f docker-compose.dev.yml up",
-    "docker:dev:build": "docker compose -f docker-compose.dev.yml up --build",
-    "test": "jest"
+    "predev": "cd apps/backend && go mod download && cd ../../ && cd apps/frontend && npm install",
+    "dev": "turbo run dev --parallel",
+    "docker-dev": "docker-compose -f docker-compose.yml up --build",
+    "test": "jest",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.20",
