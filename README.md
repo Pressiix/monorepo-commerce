@@ -1,6 +1,6 @@
 # README.md for Monorepo
 
-This project is a monorepo setup using Turbo Repo that contains both a frontend and a backend application for an online e-commerce platform. Users can view available tickets in store and can add/remove from the cart
+This project is a monorepo setup using Turbo Repo that contains both a frontend and a backend application for an online e-commerce platform. Users can view available tickets in store and can add/remove items from the cart
 
 ## Project Structure
 
