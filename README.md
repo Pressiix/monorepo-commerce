@@ -91,8 +91,8 @@ docker-compose down
 
 # Prerequisite for local development
 
-1. You need to install node.js and golang first
-2. Ensure the cli is available by running this command
+1. You need to install Node.js and Golang first
+2. Ensure the CLI is available by running this command
 
 ```
 # check node available
@@ -108,7 +108,7 @@ go
 curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
 ```
 
-4. Ensure the air cli is available
+4. Ensure the Air CLI is available
 
 ```
 air --help
