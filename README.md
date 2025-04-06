@@ -69,7 +69,7 @@ curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | s
 air --help
 ```
 
-5. Install Turbo CLI (Optional if you need to use docker to build & run this project instead of npm command)
+5. Install Turbo CLI (It's optional if you need to use docker to build & run this project instead of npm command)
 
 ```
 npm install turbo --global
