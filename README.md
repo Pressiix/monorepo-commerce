@@ -10,6 +10,8 @@ monorepo-commerce
 │   ├── frontend
 │   └── backend
 ├── docker
+│   ├── frontend.Dockerfile
+│   └── backend.Dockerfile
 ├── docker-compose.yml
 ├── turbo.json
 ├── package.json
